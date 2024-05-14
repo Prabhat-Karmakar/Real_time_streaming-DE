@@ -13,6 +13,7 @@
 This project serves as a comprehensive guide to building an end-to-end data engineering pipeline. It covers each stage from data ingestion to processing and finally to storage, utilizing a robust tech stack that includes Apache Airflow, Python, Apache Kafka, Apache Zookeeper, Apache Spark, and Cassandra. Everything is containerized using Docker for ease of deployment and scalability.
 
 ## Description
+Discover the real-time data streaming pipeline, containerized with Docker for seamless deployment and scalability. From data generation via Randomuser.me API to storage in Cassandra, this architecture harnesses the power of Apache Airflow, Kafka, Spark, and PostgreSQL. Each component runs in Docker containers, ensuring easy setup and management. Explore the repository for a containerized solution that delivers robust, scalable real-time data engineering capabilities.
 
 ## System Architecture
 
