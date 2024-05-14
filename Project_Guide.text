@@ -2,8 +2,8 @@ Step 1 : Check the directory and Environment(terminal)
         - deactivate
         - ./venv/scripts/activate (Windows)   | source venv/bin/activate (other-systems)
 
-Step 2 : Install Apache Airflow (terminal)
-         code - pip install apache-airflow
+Step 2 : Install Apache Airflow 
+         code - pip install apache-airflow #TERMINAL
 
 Step 3 : Create a new Folder 'dags'
          new > directory > dags
