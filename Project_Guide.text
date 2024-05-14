@@ -18,21 +18,21 @@ Step 6 : Clean the Data in the Desired format.
 Step 7 : Set-up a Docker Compose File ('>' - dependencies )
          [Zookeeper] > [Kafka] > [Schema-registry] > [Control_center]
 
-Step 8 : Running Docker compose file (terminal)
-         code - docker compose up -d
+Step 8 : Running Docker compose file 
+         code - docker compose up -d  (#TERMINAL)
 
 Step 9 : From Docker container going to control center
          - By clicking control centre Url
          or by
          - pasting http://localhost:9021/clusters in your browser
 
-Step 10 : Installing kafka-python to produce topic in Kafka(terminal)
-          pip install pip install kafka-python
+Step 10 : Installing kafka-python to produce topic in Kafka
+          pip install pip install kafka-python  (#TERMINAL)
 
 Step 11 : Import KafkaProducer and write the code to produce and send to kafka
 
-Step 12 : Run the Stream to check if topic is created in the Kafka(terminal)
-          code - python dags/kafka_stream.py
+Step 12 : Run the Stream to check if topic is created in the Kafka
+          code - python dags/kafka_stream.py  (#TERMINAL)
 
 Step 13 : Update Docker Compose File by adding Webserver, scheduler & postgres
 
@@ -41,11 +41,11 @@ Step 14 : Create a New directory called Scripts for entrypoints
 Step 15 : Create a new file entrypoint.sh
            scripts > entrypoint.sh
 
-Step 16 : Create the Requirements.txt file(terminal)
-          code- pip freeze >> requirements.txt
+Step 16 : Create the Requirements.txt file
+          code- pip freeze >> requirements.txt (#TERMINAL)
 
 Step 17 : Run The Docker File
-          docker compose up -d
+          docker compose up -d (#TERMINAL)
 
 Step 18 : Write the DAG functions and then trigger dag in the UI
 
@@ -58,10 +58,10 @@ Step 21 : Add Cassandra in the Docker compose file and then Run it
 Step 22 : Create a new python file ("spark_stream.py") for the spark streaming codes
 
 Step 23 : Install Cassandra Driver to communicate with cassandra(terminal)
-          pip install cassandra-driver
+          pip install cassandra-driver (#TERMINAL)
 
 Step 24 : Install spark and pyspark in the Environment(terminal)
-           pip install spark pyspark
+           pip install spark pyspark (#TERMINAL)
 
 Step 25 : Check Maven Repository for the jars file for configuration (spark_cassandra_connector)
           Search Spark Cassandra Connector and click on the com.datastax.spark then choose latest version
@@ -72,15 +72,18 @@ Step 26 : Again Check Maven Repository for the second jar (Spark-Sql-Kafka-conne
 Step 27 : Use the examples from the Documentation Spark + Kafka Integration Guide
           site = https://spark.apache.org/docs/latest/structured-streaming-kafka-integration.html
 
-Step 28 :
+Step 28 : Run the Docker File Again
 
-Step 29 :
+Step 29 :Login and Check the Apache Airflow to ensure the data is streaming
 
-Step 30 :
+Step 30 : Run Spark stream
+          python spark_stream.py  (#TERMINAL)
 
-Step 31 :
+Step 31 : Run Cassandra 
+          docker exec -it cassandra cqlsh -u cassandra -p casssandra localhost 9042  (#TERMINAL)
 
-Step 32 :
+Step 32 :Check the Data 
+        Select * from sprak_streams.created_users;  (#TERMINAL)
 
 Step 33 :
 
