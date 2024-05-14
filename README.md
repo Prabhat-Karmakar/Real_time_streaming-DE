@@ -17,7 +17,7 @@ Discover the real-time data streaming pipeline, containerized with Docker for se
 
 ## System Architecture
 
-![System Architecture](https://github.com/airscholar/e2e-data-engineering/blob/main/Data%20engineering%20architecture.png)
+![System Architecture](https://github.com/Prabhat-Karmakar/Real_time_streaming-DE/blob/main/System%20Architecture.png)
 
 The project is designed with the following components:
 
